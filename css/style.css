@@ -21,12 +21,17 @@ body {
 }
 
 .title {
+  color: rgb(48, 48, 48);
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 600;
   text-align: center;
 }
 
 .button {
   border-radius: 2px;
   border: none;
+  padding: 0;
   color: rgb(255, 255, 255);
   font-family: Mulish;
   font-size: 12px;
@@ -34,6 +39,7 @@ body {
   line-height: -1px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button--blue {
   background: rgb(0, 165, 244);
@@ -93,7 +99,8 @@ body {
   margin-top: 140px;
   margin-bottom: 50px;
 }
-.header-control__manage-booking-btn, .header-control__signin-btn {
+.header-control__manage-booking-btn,
+.header-control__signin-btn {
   border: none;
   padding: 0;
   background: none;
@@ -107,7 +114,7 @@ body {
 .header-control__manage-booking-btn {
   margin-right: 50px;
 }
-.header-control__signin-btn{
+.header-control__signin-btn {
   margin-right: 34px;
 }
 .header-control__register-btn {
@@ -128,25 +135,27 @@ body {
   width: 380px;
   height: 50px;
 }
+
 .header-content__input[type="date"] {
+  appearance: none;
   width: 210px;
   height: 50px;
-  padding: 20px 20px;
+  padding-left: 40px; /* Shift date text to the right */
+  /* Add custom calendar icon */
+  background: url("../img/icon_date.svg") no-repeat left 10px center, #fff;
+  background-size: 20px;
+  color: black;
+  border: 1px solid #ccc; /* Добавляем границу */
 }
 
-.header-content__input[type="date"]::-webkit-calendar-picker-indicator {
-  position: relative;
-  right: 150px;
-  color: rgba(0, 0, 0, 0);
-  opacity: 1;
-  display: block;
-  background: url("../img/icon_date.svg") no-repeat;
-  /* background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) */
-  width: 20px;
-  height: 20px;
-  border-width: thin;
-  z-index: 5;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
 }
+.input[type="date"]::placeholder {
+  color: red;
+  font-style: italic;
+}
+
 .header-content__button {
   width: 150px;
   height: 50px;
@@ -164,11 +173,28 @@ body {
 /*
 ** RENTAL
 */
+.rental {
+  padding: 145px 165px;
+  text-align: center;
+}
 .rental__book-btn {
   padding: 20px 50px;
+  margin-right: 70px;
 }
 .rental__find-out-btn {
   color: rgb(130, 193, 65);
+}
+.rental__info {
+  margin: 0 auto;
+  max-width: 675px;
+  max-height: 220px;
+}
+.rental__title {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.rental__text {
+  padding-bottom: 25px;
 }
 
 /*	
