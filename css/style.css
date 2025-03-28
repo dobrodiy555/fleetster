@@ -140,12 +140,11 @@ body {
   appearance: none;
   width: 210px;
   height: 50px;
-  padding-left: 40px; /* Shift date text to the right */
-  /* Add custom calendar icon */
+  padding-left: 40px;
   background: url("../img/icon_date.svg") no-repeat left 10px center, #fff;
   background-size: 20px;
   color: black;
-  border: 1px solid #ccc; /* Добавляем границу */
+  border: 1px solid #ccc;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
