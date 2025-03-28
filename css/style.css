@@ -1,0 +1,239 @@
+/*set default styles for body (fonts, color etc.)*/
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(48, 48, 48);
+}
+
+/*if you need a class to hide content when making layout*/
+.none {
+  display: none;
+}
+
+/* container чтоб не разъежались глаза*/
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.button {
+  border-radius: 2px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: -1px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.button--blue {
+  background: rgb(0, 165, 244);
+}
+.button--orange {
+  background: rgb(245, 166, 35);
+}
+.button--green {
+  background: rgb(130, 193, 65);
+}
+.button--transparent {
+  background: transparent;
+}
+
+/*
+** HEADER
+*/
+/* set of CSS props for background images */
+.header {
+  background-image: url("../img/header-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header__top {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 50px;
+}
+
+.menu__list-link {
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: -1px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header-content__title {
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: -1px;
+  letter-spacing: 0.5px;
+  margin-top: 140px;
+  margin-bottom: 50px;
+}
+.header-control__manage-booking-btn, .header-control__signin-btn {
+  border: none;
+  padding: 0;
+  background: none;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: -1px;
+  text-transform: uppercase;
+}
+
+.header-control__manage-booking-btn {
+  margin-right: 50px;
+}
+.header-control__signin-btn{
+  margin-right: 34px;
+}
+.header-control__register-btn {
+  padding: 14px 30px;
+}
+
+.header-content__tab-btn {
+  border: none;
+  padding: 0;
+  background: none;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.header-content__input[type="text"] {
+  width: 380px;
+  height: 50px;
+}
+.header-content__input[type="date"] {
+  width: 210px;
+  height: 50px;
+  padding: 20px 20px;
+}
+
+.header-content__input[type="date"]::-webkit-calendar-picker-indicator {
+  position: relative;
+  right: 150px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../img/icon_date.svg") no-repeat;
+  /* background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) */
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+  z-index: 5;
+}
+.header-content__button {
+  width: 150px;
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  background: rgb(130, 193, 65);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 50px;
+}
+
+/*
+** RENTAL
+*/
+.rental__book-btn {
+  padding: 20px 50px;
+}
+.rental__find-out-btn {
+  color: rgb(130, 193, 65);
+}
+
+/*	
+** FOOTER
+*/
+.footer {
+  background: rgb(48, 48, 48);
+  min-height: 400px;
+  color: rgb(255, 255, 255);
+}
+.footer__logo {
+  display: block;
+  width: 140px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 60px 0 70px;
+}
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-select__title {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+.footer-select select {
+  display: block;
+  width: 235px;
+  height: 35px;
+  margin-bottom: 15px;
+}
+.footer__menu-items {
+  display: flex;
+  gap: 70px;
+}
+.footer__menu-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: -1px;
+}
+.footer__menu-items li a {
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+
+.footer hr {
+  border: none;
+  font-size: 0;
+  background-color: rgb(83, 83, 83);
+  height: 0.5px;
+}
+
+.footer__social-list {
+  display: flex;
+}
+
+.footer__social-item a {
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+}
